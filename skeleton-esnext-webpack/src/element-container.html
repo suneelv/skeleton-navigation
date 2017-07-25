@@ -1,0 +1,9 @@
+<template>
+    <require from="sample-element"></require>
+    <div repeat.for = "item of data" matcher.bind = "matcher">
+        <sample-element item.bind = "item"></sample-element>
+    </div>
+
+    <button click.delegate = "removeElement()">remove item</button>
+    <button click.delegate = "reset()">reset</button>
+</template>
